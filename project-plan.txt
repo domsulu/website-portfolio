@@ -1,0 +1,6 @@
+Project plan:
+> menggunakan html,css
+> didalam navigation ada about me, contact, projects, skills
+> membuat sebuah fitur dimana ada tombol hover/panah untuk meng-slide project ke project lain nya.
+> menggunakan color scheme yang ada disini "https://colorhunt.co/palette/f9f5ebe4dccfea5455002b5b"
+> 
