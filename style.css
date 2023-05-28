@@ -1,13 +1,226 @@
+html {
+  font-size: 10px;
+  background-color: #cdbea5;
+}
+
 * {
-  font-size: 16px;
   margin: 0;
   padding: 0;
-  background-color: #F9F5EB;
   box-sizing: border-box;
-};
+}
 
 /* body section */
 
-nav a {
+/* navigation section */
+nav {
+  display: flex;  
+  justify-content: center;
+  border-bottom: 0.5px rgba(0, 0, 0, 0.523) solid;
+  background-color: #f7f5ee;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  margin-top: 1.7%;
+  margin-bottom: 1.7%; 
+}
+
+nav li {
   display: inline-block;
-};
+}
+
+nav a {
+  font-size: 2rem;
+  margin: 0.0010%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  text-decoration: none;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  border-radius: 5%;
+}
+
+/* header section */
+header {
+  display: flex;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 3.6rem;
+  justify-content: center;
+  margin: 1.3% 4%;
+  font-family: 'Allerta', 'Roboto', sans-serif;
+}
+
+/* main section */
+
+/* about me section */
+.about-me {
+  display: grid;
+  width: 100%;
+  height: 30%;
+  grid-template-columns: 50% 50%;
+}
+
+.about-me article {
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 4%;
+}
+
+.about-me h2 {
+  font-size: 3rem;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.2rem;
+}
+
+.about-me p {
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 2%;
+  line-height: 2.3rem;
+}
+
+.about-me img {
+  width: 80%;
+  overflow: hidden;
+  align-self: center;
+  justify-self: center;
+  border-radius: 10%;
+}
+
+/* project section */
+.project {
+  height: 50%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#project-list {
+  background-color:#ffffff;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: default;
+} 
+
+.arrow-left-circle {
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-right: 1rem;
+}
+
+.arrow-right-circle {
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-left: 1rem;
+}
+
+.project h2,
+#project-list {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 0.4rem;
+  word-spacing: 1rem;
+} /* untuk perubahan attribute dalam js */
+
+#project-list {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+} /* untuk perubahan attribute dalam js */
+
+/* SKILL SECTION */
+.skill {
+  margin-left: 4%;
+  margin-top: 1%;
+  margin-bottom: 8%;
+  width: 100%;
+}
+
+.skill h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 0.4rem;
+  margin-bottom: 2.5%;
+}
+
+.skill-list {
+  display: flex;
+  margin-left: 1%;
+}
+
+.skill-list i {
+  margin-right: 4%;
+}
+
+/* FOOTER SECTION */
+footer {
+  border-top: 0.5px rgba(0, 0, 0, 0.523) solid;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f7f5ee;
+}
+
+footer p {
+  font-size: 1.5rem;
+  margin: 0.5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* CONTACT SECTION */
+.contact {
+  margin-left: 4%;
+  margin-top: 1%;
+  margin-bottom: 8%;
+  width: 100%;
+}
+
+.contact h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 0.4rem;
+  margin-bottom: 2.5%;
+}
+
+.contact a {
+  margin: 0.5% 2%;
+  color: #000000;
+}
+
+.contact-list {
+  display: flex;
+  margin-left: 1%;
+}
+
+.contact p {
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  margin-left: 1%;
+  line-height: 2.3rem;
+}
+
+
+
+

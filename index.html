@@ -4,20 +4,107 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./style.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet" />
     <title>My Portfolio</title>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allerta&family=Bebas+Neue&family=Lato:wght@400;700&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Feather Icons-->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/d409049ae0.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <nav>
       <ul>
-        <li><a id="#">About Me</a></li>
-        <li><a id="#">Project</a></li>
-        <li><a id="#">Skills</a></li>
-        <li><a id="#">Contact</a></li>
+        <li><a href="#about-me" id="about-me-nav">About Me</a></li>
+        <li><a href="#project" id="project-nav">Project</a></li>
+        <li><a href="#skill" id="skill-nav">Skill</a></li>
+        <li><a href="./contact.html" id="contact-nav">Contact</a></li>
       </ul>
     </nav>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <h1 aria-label="Owner">I'm Domingus Gracia Sulu !</h1>
+    </header>
+    <main>
+
+      <!--ABOUT ME SECTION-->
+      <section class="about-me" id="about-me">
+        <article>
+          <h2>About Me</h2>
+          <p>
+            I'm Dom, a passionate web developer specializing in HTML, CSS, and
+            JavaScript. With 6 months of experience, I create visually appealing
+            and user-friendly websites. From static pages to dynamic web
+            applications, I excel in responsive layouts, performance
+            optimization, and cross-browser compatibility.
+          </p>
+
+          <p>
+            I blend creativity with technical expertise to transform ideas into
+            functional websites. I'm constantly learning and staying up-to-date
+            with the latest web development trends, enabling me to deliver
+            innovative solutions.
+          </p>
+
+          <p>
+            Let's collaborate on exciting projects and create exceptional web
+            experiences. Get in touch with me to discuss your ideas.
+          </p>
+        </article>
+        <img
+          src="./resources/kwonjiyong.jpg"
+          alt="this is a picture of Dom Porter"
+        />
+      </section>
+      
+      <!--PROJECT SECTION-->
+      <section class="project" id="project">
+        <a href="#" id="arrow-left">
+          <i
+          data-feather="arrow-left-circle"
+          class="arrow-left-circle"></i>
+        </a>
+
+        <a href="https://github.com/domsulu/quote-generator" target="_blank" id="project-list" >
+          <div id="project-list">
+            <h2 id="inside-project-list project-list">Quote Generator</h2>
+          </div>
+        </a>
+        
+        <a href="#" id="arrow-right"><i
+          data-feather="arrow-right-circle"
+          class="arrow-right-circle"
+          id="arrow-right"></i>
+        </a>
+      </section>
+
+      <!-- SKILL SECTION -->
+      <section class="skill" id="skill">
+        <h2>Skill</h2>
+        <div class="skill-list">
+          <i class="fa-brands fa-html5 fa-10x" id="html-icon fa-icon"></i>
+          <i class="fa-brands fa-css3-alt fa-10x" id="css-icon fa-icon"></i>
+          <i class="fa-brands fa-square-js fa-10x" id="javascript-icon fa-icon"></i>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <p aria-label="credit">Made by <span style="font-weight: 700">@domporter</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!--Feather Icons-->
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>
