@@ -1,6 +1,7 @@
 html {
   font-size: 10px;
   background-color: #cdbea5;
+  height: 100%;
 }
 
 * {
@@ -9,16 +10,24 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
 /* body section */
 
 /* navigation section */
 nav {
   display: flex;  
   justify-content: center;
+  align-items: center;
   border-bottom: 0.5px rgba(0, 0, 0, 0.523) solid;
   background-color: #f7f5ee;
-  position: sticky;
-  top: 0;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  z-index: 9999;
 }
 
 nav ul {
@@ -42,10 +51,27 @@ nav a {
   border-radius: 5%;
 }
 
+/* hamburger menu */
+#menu {
+  position: absolute;
+  display: none;
+}
+
+/* position fixed */
+header,
+main,
+footer {
+  position: relative;
+  top: 60px;
+}
+/* position fixed */
+
 /* header section */
+
 header {
   display: flex;
   width: 100%;
+  top: 60px;
 }
 
 header h1 {
@@ -105,7 +131,7 @@ header h1 {
 }
 
 #project-list {
-  background-color:#ffffff;
+  background-color:#f7f5ee;
   border-radius: 50%;
   height: 300px;
   width: 300px;
@@ -193,6 +219,12 @@ footer p {
   margin-top: 1%;
   margin-bottom: 8%;
   width: 100%;
+  top: 60px;
+  position: relative;
+}
+
+.contact-nav {
+  top: 0;
 }
 
 .contact h2 {
@@ -219,6 +251,47 @@ footer p {
   margin-bottom: 2.5%;
   margin-left: 1%;
   line-height: 2.3rem;
+}
+
+#contact-footer {
+  position: absolute;
+  top: 0;
+  height: 4rem;
+}
+
+/* responsive section */
+
+/*handphone */
+@media only screen and (max-width: 480px) {
+  nav a {
+    font-size: 1.6rem;
+  }
+
+  header h1 {
+    font-size: 2.8rem;
+  }
+
+  .about-me h2 {
+    font-size: 2.4rem;
+  }
+
+  .about-me p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+
+  .contact h2 {
+    font-size: 2.4rem;
+  }
+
+  .contact p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+
+  #menu {
+    display: inline-block;
+  }
 }
 
 
