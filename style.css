@@ -200,11 +200,10 @@ header h1 {
 
 /* FOOTER SECTION */
 footer {
-  border-top: 0.5px rgba(0, 0, 0, 0.523) solid;
   width: 100%;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
-  background-color: #f7f5ee;
 }
 
 footer p {
@@ -287,6 +286,10 @@ footer p {
   .contact p {
     font-size: 1.3rem;
     line-height: 2rem;
+  }
+
+  footer {
+    width: 100%;
   }
 
   #menu {
